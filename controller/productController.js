@@ -13,7 +13,7 @@ module.exports = {
                 return res.send({ responseCode: 404, responseMessage: "product already exits" })
             }
             else {
-                let saveProduct = await new productModel(req.body).save()
+                let saveProduct = await new productModel(req.body).save()     
                 if (saveProduct) {
                     return res.send({ responseCode: 200, responseMessage: "product saved successfully", saveProduct })
                 }
