@@ -1,8 +1,6 @@
 const productModel = require('../model/productModel')
 const categoryModel = require('../model/categoryModel')
-
-
-
+      
 
 module.exports = {
     addProduct: async (req, res) => {
